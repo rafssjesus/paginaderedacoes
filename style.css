@@ -1,0 +1,138 @@
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+}
+
+/* NAVBAR */
+header {
+    background: #003366;
+    color: #fff;
+    padding: 15px 0;
+}
+
+.navbar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hamburger {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 28px;
+    color: white;
+}
+
+/* HERO */
+.hero {
+    height: 70vh;
+    background: linear-gradient(#003366b3, #003366b3), url("img/capa.jpg");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 36px;
+}
+
+.btn {
+    background: #0066cc;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    display: inline-block;
+    margin-top: 15px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* PORTFÓLIO */
+.portfolio-section {
+    padding: 40px 5%;
+    text-align: center;
+}
+
+.grid {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+}
+
+.card {
+    background: white;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 0 10px #0003;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* SOBRE */
+.sobre-section, .contato-section {
+    padding: 40px 8%;
+    background: #ffffff;
+    margin-top: 40px;
+    text-align: center;
+}
+
+/* FOOTER */
+footer {
+    background: #003366;
+    color: white;
+    text-align: center;
+    padding: 15px 0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background: #003366;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 60%;
+        padding: 20px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}

@@ -1,48 +1,81 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redações</title>
+    <title>Portfólio | Produções de Português e Redação</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<header class="header">
-    <img src="img/capa.jpg" class="capa" alt="Capa do site">
-    <div class="overlay">
-        <h1>Banco de Redações ENEM</h1>
-        <p>Escolha uma das redações abaixo</p>
-    </div>
+<!-- HEADER -->
+<header>
+    <nav class="navbar">
+        <h1 class="logo">Portfólio Escolar</h1>
+
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="menu">
+            <li><a href="#inicio">Início</a></li>
+            <li><a href="#portfolio">Portfólio</a></li>
+            <li><a href="#sobre">Sobre</a></li>
+            <li><a href="#contato">Contato</a></li>
+        </ul>
+    </nav>
 </header>
 
-<section class="lista-redacoes">
-    <h2>Selecione uma Redação</h2>
-
-    <div class="grid">
-
-        <a class="card" href="redacoes/redacao01.html">Redação 01</a>
-        <a class="card" href="redacoes/redacao02.html">Redação 02</a>
-        <a class="card" href="redacoes/redacao03.html">Redação 03</a>
-        <a class="card" href="redacoes/redacao04.html">Redação 04</a>
-        <a class="card" href="redacoes/redacao05.html">Redação 05</a>
-        <a class="card" href="redacoes/redacao06.html">Redação 06</a>
-        <a class="card" href="redacoes/redacao07.html">Redação 07</a>
-        <a class="card" href="redacoes/redacao08.html">Redação 08</a>
-        <a class="card" href="redacoes/redacao09.html">Redação 09</a>
-        <a class="card" href="redacoes/redacao10.html">Redação 10</a>
-        <a class="card" href="redacoes/redacao11.html">Redação 11</a>
-        <a class="card" href="redacoes/redacao12.html">Redação 12</a>
-        <a class="card" href="redacoes/redacao13.html">Redação 13</a>
-        <a class="card" href="redacoes/redacao14.html">Redação 14</a>
-        <a class="card" href="redacoes/redacao15.html">Redação 15</a>
-
+<!-- CAPA -->
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h2>Encerramento do Ano Letivo</h2>
+        <p>Portfólio com as 15 produções realizadas na disciplina de Língua Portuguesa e Redação.</p>
+        <a href="#portfolio" class="btn">Ver Trabalhos</a>
     </div>
 </section>
+
+<!-- PORTFÓLIO -->
+<main id="portfolio" class="portfolio-section">
+    <h2>Portfólio de Produções</h2>
+
+    <div class="grid">
+        <!-- 15 Cards Automáticos -->
+        <!-- Basta trocar as imagens depois -->
+        <script>
+            for(let i = 1; i <= 15; i++){
+                document.write(`
+                <article class="card">
+                    <img src="img/trabalho${i}.jpg" alt="Produção ${i}">
+                    <h3>Produção ${i}</h3>
+                    <p>Descrição da produção ${i}. Você pode editar esse texto.</p>
+                </article>
+                `);
+            }
+        </script>
+    </div>
+</main>
+
+<!-- SOBRE -->
+<section id="sobre" class="sobre-section">
+    <h2>Sobre o Projeto</h2>
+    <p>
+        Este site apresenta as produções desenvolvidas ao longo do ano na disciplina de Língua Portuguesa e Redação.
+        Ele reúne textos, análises, interpretações e atividades realizadas como parte do processo de aprendizagem.
+    </p>
+</section>
+
+<!-- CONTATO -->
+<section id="contato" class="contato-section">
+    <h2>Contato</h2>
+    <p>Em caso de dúvidas sobre o portfólio, entre em contato com o professor(a).</p>
+    <a href="mailto:email@escola.com" class="btn">Enviar E-mail</a>
+</section>
+
+<!-- FOOTER -->
+<footer>
+    <p>© 2024 Portfólio Escolar — Desenvolvido para avaliação.</p>
+</footer>
 
 <script src="script.js"></script>
 </body>
 </html>
-
-
-

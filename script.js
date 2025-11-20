@@ -1,1 +1,4 @@
-console.log("Site carregado com sucesso!");
+function toggleMenu() {
+    const menu = document.getElementById("menu");
+    menu.style.display = (menu.style.display === "flex") ? "none" : "flex";
+}

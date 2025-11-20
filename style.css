@@ -6,55 +6,72 @@
     font-family: "Poppins", sans-serif;
 }
 
+/* PALETA */
 :root {
-    --cor1: #FFB67F;
-    --cor2: #C8A5FF;
-    --cor3: #FF9A9A;
-    --cor4: #FFD4A8;
-    --cor5: #FF8AE2;
+    --cor1: #FFB67F;   /* laranja claro */
+    --cor2: #C8A5FF;   /* lilás apagado */
+    --cor3: #FF9A9A;   /* vermelho pastel */
+    --cor4: #FFD4A8;   /* laranja pastel */
+    --cor5: #FF8AE2;   /* magenta claro */
 
-    --fundo: #ffffff;
     --texto: #333;
-
     --fundo-escuro: #121212;
     --texto-escuro: #f1f1f1;
 }
 
-/* TEMA ESCURO */
+/* 🌈 FUNDO EM DEGRADÊ */
+body {
+    background: linear-gradient(150deg, var(--cor1), var(--cor2), var(--cor5), var(--cor3), var(--cor4));
+    background-size: 400% 400%;
+    animation: fundo 15s ease infinite;
+}
+
+@keyframes fundo {
+    0%   { background-position: 0% 50%; }
+    50%  { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+/* 🌙 MODO ESCURO */
 body.dark {
-    background: var(--fundo-escuro);
+    background: #0e0e0e;
     color: var(--texto-escuro);
 }
 
-/* CABEÇALHO */
+/* CABEÇALHO SIMPLES */
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: var(--cor2);
+    background: rgba(0,0,0,0.35);
+    backdrop-filter: blur(8px);
     padding: 12px 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
-    box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+    color: white;
 }
 
 header h1 {
-    font-size: 20px;
-    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
-    color: #fff;
-    margin-left: 12px;
-    text-decoration: none;
+    color: white;
     font-weight: 500;
+    text-decoration: none;
     transition: 0.3s;
 }
 
 nav a:hover {
-    opacity: 0.7;
+    opacity: 0.6;
 }
 
 /* CAPA */
@@ -62,7 +79,7 @@ nav a:hover {
     margin-top: 80px;
     padding: 60px;
     text-align: center;
-    background: var(--cor4);
+    color: white;
 }
 
 .capa img {
@@ -78,58 +95,48 @@ nav a:hover {
     padding: 60px;
     margin: 40px auto;
     max-width: 900px;
-    border-radius: 15px;
-    color: var(--texto);
-    background: var(--cor1);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    background: rgba(255,255,255,0.45);
+    color: #222;
+    box-shadow: 0 4px 25px rgba(0,0,0,0.15);
     animation: fade 1.2s ease-in-out;
 }
-
-/* ALTERNAR CORES */
-.secao:nth-child(2) { background: var(--cor2); }
-.secao:nth-child(3) { background: var(--cor3); }
-.secao:nth-child(4) { background: var(--cor4); }
-.secao:nth-child(5) { background: var(--cor5); }
 
 /* RODAPÉ */
 footer {
     text-align: center;
     padding: 30px;
-    background: var(--cor2);
     color: white;
+    font-weight: 500;
 }
 
-/* BOTÃO DE TEMA */
-#tema-btn {
+/* BOTÕES FIXOS */
+#tema-btn, #topo-btn {
     position: fixed;
-    top: 90px;
     right: 20px;
-    padding: 12px;
-    border: none;
-    border-radius: 50%;
-    background: var(--cor5);
-    color: white;
-    font-size: 20px;
-    cursor: pointer;
-    z-index: 1000;
-}
-
-/* BOTÃO VOLTAR AO TOPO */
-#topo-btn {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: var(--cor3);
-    color: white;
     border: none;
     border-radius: 50%;
     padding: 15px;
     font-size: 18px;
-    display: none;
     cursor: pointer;
+    z-index: 1000;
 }
 
-/* ANIMAÇÕES */
+#tema-btn {
+    top: 90px;
+    background: var(--cor5);
+    color: white;
+}
+
+#topo-btn {
+    bottom: 20px;
+    background: var(--cor3);
+    color: white;
+    display: none;
+}
+
+/* ANIMAÇÃO DAS SEÇÕES */
 @keyframes fade {
     from { opacity: 0; transform: translateY(25px); }
     to   { opacity: 1; transform: translateY(0); }

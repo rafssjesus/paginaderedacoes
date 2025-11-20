@@ -1,145 +1,205 @@
+/* -----------------------------------
+   CONFIGURAÇÕES GERAIS
+----------------------------------- */
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+html {
     scroll-behavior: smooth;
-    font-family: "Poppins", sans-serif;
 }
 
-/* PALETA */
-:root {
-    --cor1: #FFB67F;   /* laranja claro */
-    --cor2: #C8A5FF;   /* lilás apagado */
-    --cor3: #FF9A9A;   /* vermelho pastel */
-    --cor4: #FFD4A8;   /* laranja pastel */
-    --cor5: #FF8AE2;   /* magenta claro */
-
-    --texto: #333;
-    --fundo-escuro: #121212;
-    --texto-escuro: #f1f1f1;
-}
-
-/* 🌈 FUNDO EM DEGRADÊ */
 body {
-    background: linear-gradient(150deg, var(--cor1), var(--cor2), var(--cor5), var(--cor3), var(--cor4));
-    background-size: 400% 400%;
-    animation: fundo 15s ease infinite;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(180deg,
+        #FFD7B5,   /* laranja claro */
+        #E9D6FF,   /* lilás apagado */
+        #FFB5B5,   /* vermelho pastel */
+        #FFE2B5,   /* laranja pastel */
+        #FFB5F1    /* magenta claro */
+    );
+    color: #222;
+    padding-top: 100px;
+    transition: background .4s, color .4s;
 }
 
-@keyframes fundo {
-    0%   { background-position: 0% 50%; }
-    50%  { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
-}
 
-/* 🌙 MODO ESCURO */
+
+/* -----------------------------------
+   MODO ESCURO
+----------------------------------- */
+
 body.dark {
-    background: #0e0e0e;
-    color: var(--texto-escuro);
+    background: #0f0f0f;
+    color: #f0f0f0;
 }
 
-/* CABEÇALHO SIMPLES */
+
+
+/* -----------------------------------
+   CABEÇALHO
+----------------------------------- */
+
 header {
     position: fixed;
     top: 0;
     width: 100%;
-    background: rgba(0,0,0,0.35);
-    backdrop-filter: blur(8px);
-    padding: 12px 20px;
+    padding: 18px 45px;
+    background: rgba(255, 255, 255, 0.65);
+    backdrop-filter: blur(12px);
     display: flex;
     justify-content: space-between;
     align-items: center;
+    box-shadow: 0 3px 18px rgba(0, 0, 0, 0.08);
     z-index: 1000;
-    color: white;
 }
 
 header h1 {
-    font-size: 21px;
-    font-weight: 600;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
+    font-size: 26px;
+    font-weight: 700;
 }
 
 nav a {
-    color: white;
-    font-weight: 500;
+    margin-left: 22px;
     text-decoration: none;
-    transition: 0.3s;
+    color: #333;
+    font-weight: 500;
+    transition: .25s;
 }
 
 nav a:hover {
-    opacity: 0.6;
+    color: #7e4cff;
 }
 
-/* CAPA */
+
+
+/* -----------------------------------
+   CAPA
+----------------------------------- */
+
 .capa {
-    margin-top: 80px;
-    padding: 60px;
-    text-align: center;
-    color: white;
+    position: relative;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .capa img {
+    position: absolute;
     width: 100%;
-    max-height: 320px;
+    height: 100%;
     object-fit: cover;
-    border-radius: 12px;
-    margin-bottom: 20px;
+    filter: brightness(0.55);
 }
 
-/* SEÇÕES */
-.secao {
-    padding: 60px;
-    margin: 40px auto;
-    max-width: 900px;
-    border-radius: 20px;
-    backdrop-filter: blur(10px);
-    background: rgba(255,255,255,0.45);
-    color: #222;
-    box-shadow: 0 4px 25px rgba(0,0,0,0.15);
-    animation: fade 1.2s ease-in-out;
-}
-
-/* RODAPÉ */
-footer {
+.capa-texto {
+    position: relative;
     text-align: center;
-    padding: 30px;
     color: white;
-    font-weight: 500;
+    animation: fadeIn 1.6s ease;
 }
 
-/* BOTÕES FIXOS */
+.capa-texto h2 {
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.capa-texto p {
+    font-size: 18px;
+    margin-top: 12px;
+}
+
+
+
+/* -----------------------------------
+   SEÇÕES DAS REDAÇÕES
+----------------------------------- */
+
+.secao {
+    width: 80%;
+    max-width: 900px;
+    margin: 70px auto;
+    background: rgba(255, 255, 255, 0.80);
+    backdrop-filter: blur(10px);
+    border-radius: 14px;
+    padding: 40px;
+    box-shadow: 0 6px 22px rgba(0, 0, 0, 0.12);
+    animation: slideUp .8s ease;
+    transition: .35s;
+}
+
+body.dark .secao {
+    background: rgba(30, 30, 30, 0.65);
+}
+
+.secao:hover {
+    transform: translateY(-3px);
+}
+
+.secao h2 {
+    font-size: 26px;
+    margin-bottom: 15px;
+    font-weight: 600;
+}
+
+
+
+/* -----------------------------------
+   BOTÕES FIXOS
+----------------------------------- */
+
 #tema-btn, #topo-btn {
     position: fixed;
     right: 20px;
-    border: none;
+    padding: 12px 14px;
     border-radius: 50%;
-    padding: 15px;
-    font-size: 18px;
+    border: none;
     cursor: pointer;
-    z-index: 1000;
+    font-size: 18px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: .3s;
+    background: white;
 }
 
-#tema-btn {
-    top: 90px;
-    background: var(--cor5);
-    color: white;
+#tema-btn { top: 110px; }
+#topo-btn { bottom: 40px; }
+
+#tema-btn:hover, #topo-btn:hover {
+    transform: scale(1.08);
 }
 
-#topo-btn {
-    bottom: 20px;
-    background: var(--cor3);
-    color: white;
-    display: none;
+
+
+/* -----------------------------------
+   RODAPÉ
+----------------------------------- */
+
+footer {
+    padding: 40px;
+    text-align: center;
+    font-weight: 500;
+    opacity: .7;
 }
 
-/* ANIMAÇÃO DAS SEÇÕES */
-@keyframes fade {
-    from { opacity: 0; transform: translateY(25px); }
-    to   { opacity: 1; transform: translateY(0); }
+
+
+/* -----------------------------------
+   ANIMAÇÕES
+----------------------------------- */
+
+@keyframes fadeIn {
+    0% { opacity: 0; transform: translateY(25px); }
+    100% { opacity: 1; transform: translateY(0); }
 }
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
 
 

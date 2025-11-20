@@ -3,225 +3,81 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de Redações</title>
+    <title>Redações | Página Completa</title>
 
+    <!-- Fonte -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="style.css">
-
-    <!-- Fonte Google -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
-
 </head>
 <body>
 
-    <!-- BOTÃO DE TEMA -->
+    <!-- Botões Fixos -->
     <button id="tema-btn">🌙</button>
-
-    <!-- BOTÃO VOLTAR AO TOPO -->
     <button id="topo-btn">⬆</button>
 
-    <!-- CABEÇALHO -->
+    <!-- Cabeçalho -->
     <header>
-    <h1>Portfólio</h1>
+        <h1>Minhas Redações</h1>
 
-    <nav>
-        <a href="#topo">Início</a>
-        <a href="#redacao1">Redações</a>
-        <a href="#rodape">Rodapé</a>
-    </nav>
-</header>
+        <nav>
+            <a href="#inicio">Início</a>
+            <a href="#redacao1">Redação 1</a>
+            <a href="#redacao5">Redação 5</a>
+            <a href="#redacao10">Redação 10</a>
+            <a href="#redacao15">Redação 15</a>
+        </nav>
+    </header>
 
     <!-- CAPA -->
-    <section id="topo" class="capa">
-        <img src="redações.jpeg.jpg" alt="Imagem de capa">
-        <h2>Bem-vindo(a) ao Portfólio</h2>
-        <p>Explore todas as minhas produções de Língua Portuguesa e Redação.</p>
+    <section class="capa" id="inicio">
+        <img src="img/capa.jpg" alt="Imagem de capa">
+        <div class="capa-texto">
+            <h2>Bem-vindo(a) às Minhas Redações</h2>
+            <p>Rolando a página, você encontrará todas as 15 produções organizadas e bonitas.</p>
+        </div>
     </section>
 
-    <!-- 15 SEÇÕES DE REDAÇÃO -->
+    <!-- CONTEÚDO PRINCIPAL -->
     <main>
 
-        <!-- GERADAS AUTOMATICAMENTE -->
-        <!-- Você pode editar os textos dentro de <p> -->
+        <!-- 15 SEÇÕES DE REDAÇÃO -->
+        <!-- Cada uma você poderá editar livremente -->
 
-        <section id="redacao1" class="secao">
-            <h2>A Padronização da beleza e os procedimentos estéticos</h2>
-            <p>Desde os tempos antigos, há o anseio por adequação aos padrões estéticos, 
-                situação exemplificada na série “Bridgerton”, em que as mulheres utilizavam “corset” para definição de curvas corporais. Nesse viés, percebe-se o quanto estar dentro do que é considerado belo para a sociedade, é um fator perpassado aos tempos modernos. Sendo assim, a padronização de beleza, juntamente com o desejo pela perfeição culminaram na idealização de um arquétipo irreal de belo, alcançando procedimentos estéticos.
-                Ultrapassando esse contexto e, chegando à realidade, constata-se que a padronização da beleza é uma característica social marcante. Nesse sentido, os indivíduos viveriam para ser o que os outros querem que sejam, ideia visível nos estudos estoicistas, em que, o ser observaria comportamentos para ver qual deveria seguir, e, alcançar a felicidade. Paradoxalmente, essa é a realidade: pessoas buscando padrões irreais para “pertencerem” a algo.
-                Em adição a esse predisposto, outro fator que leva os jovens a cada vez mais realizarem procedimentos, é o desejo pela perfeição e a busca por aprovação, situação agravada pelas mídias. Soma-se a isso o tese do filósofo moderno Bournout, que destaca que os seres são repertórios de si, ou seja, “espetáculos” criados para performar e não cultivar uma identidade, tema também abordado por Guy Debord, escritor.
-                Sendo assim, é necessária a adoção de medidas que preservem a identidade dos jovens, para não buscarem procedimentos estéticos em prol da perfeição pré-estabelecida. Cabe, portanto, ao Ministério de Desenvolvimento Social, que garante a qualidade de vida dos cidadãos, em parceria com complexos midiáticos, desenvolver projetos de auxílio psicológico por meio da criação de institutos que ofereçam esse suporte em sessões de terapia. Além da divulgação de “publis” midiáticas que se opõem ao padrão. Assim, será possível diminuir a quantidade de jovens que idealizam corpos irreais.
-
-</p>
+        <!-- TEMPLATE DE UMA SEÇÃO:
+        <section class="secao" id="redacaoX">
+            <h2>Redação X — Título</h2>
+            <p>Sua redação aqui...</p>
         </section>
+        -->
 
-        <section id="redacao2" class="secao">
-            <h2>Principais fatores que influenciam na qualidade de vida e no bem - esar da população</h2>
-            <p>Na série “The Chosen”, vê-se a história de pessoas que tiveram seus destinos mudados ao alterarem seu estilo de vida e encontrarem-se com o que era real (o toque, o afeto...), tornando-se melhores. Fora das telas, o meio social impacta seres, positiva ou negativamente, seu bem-estar e qualidade de vida, assim como a dos personagens representados em “The Chosen”. Dessa forma, o ambiente social e o contato com o que realmente é verdadeiro (pessoas, emoções, a natureza...), são fatores que influenciam a população.
+        <!-- Gerando todas as 15 seções -->
 
-Trazendo para a realidade, os indivíduos são influenciados por sujeitos à sua volta, emoções, palavras, contextos..., ou seja, a comunidade em que se vive, altera a maneira como se pensa, se desenvolve e age. A esse respeito, o sociólogo Durkheim defende que, a sociedade molda o homem. Nesse viés, para construir uma satisfação plena é preciso incluir-se em um ambiente que influencia positivamente.
-
-Outrossim, para que o plano de satisfação seja realizado, viver com pessoas, expressar os sentimentos, contemplar a natureza, geram bem-estar social e qualidade de vida. Zygmunt Bauman, sociólogo influente, utiliza do termo “modernidade líquida” para referir-se a um contexto em que os indivíduos não constroem verdadeiras relações, impactando negativamente sua existência, revelando a importância de fazer verdadeiras amizades, que proporcionarão uma realização pessoal e coletiva completa.
-
-Portanto, é primordial buscar um contexto que revele paz e harmonia com relacionamentos saudáveis, gerando qualidade de vida e bem-estar. Para isso, cabe ao Ministério da Cultura, responsável pelo desenvolvimento cultural, organizar atividades que desenvolvam valores, por meio da criação de eventos em que os cidadãos terão contato. Essas ações unirão pessoas e gerarão laços, revelando uma sociedade saudável espiritualmente, mental, psicológica e emocionalmente.</p>
-        </section>
-
-        <section id="redacao3" class="secao">
-            <h2>Acessibilidade e inclusão de pessoas com deficiência no Brasil</h2>
-            <p>Na novela, “Cúmplices de um Resgate”, do SBT, Theo, possui deficiência visual. Na narrativa, nota-se as dificuldades enfrentadas por deficientes visuais, no Brasil. Fora das telas, há dificuldade quando o assunto é acessibilidade e inclusão às pessoas com deficiência. Conflito visível nas mais variadas camadas: estrutural, comunicativa, legislativa, entre outras, devido às configurações da educação, que não objetiva a situação dos guetos sociais envolvidos e às barreiras criadas pelo governo.
-
-Trazendo para a realidade, o Brasil é um país em que a educação não instiga os alunos a estudarem sobre a vida dos incapacitados. Ou seja, pouco se sabe sobre como muitos vivem. Não se é apresentado o tema de forma clara e objetiva nas escolas tradicionais, desenvolvendo um preconceito simbólico, assim como a ideia estabelecida por Pierre Bordieu, em que a falta do saber seria uma realidade “normal”, gerando um preconceito não percebido. Nesse viés, o estudo sobre a existência dessas camadas, existe, mas pouco transmitido.
-
-Outro fator que dificulta a acessibilidade e inclusão é a própria barreira social criada pelo âmbito governamental. A falta de políticas públicas de acessibilidade em infraestrutura, ainda em muitos locais, combinada com a escassez de instrumentos de trabalho ou de educação, falta de tecnologias e outros, reduzem a inclusão dessa minoria. Em contrapartida, as ideias de Platão e Aristóteles refletem que a cidade deveria ser o local ideal para o desenvolvimento dos indivíduos, realidade não experimentada na prática.
-
-Portanto, medidas que alterem essa realidade, devem ser exigidas. É preciso que o Ministério dos Direitos Humanos, responsável pela promoção dos direitos básicos, em parceria com as mídias, desenvolvam projetos de educação sobre deficientes e sua realidade, que identifiquem essas camadas. Através da implantação de programas práticos sobre cada dificuldade de inclusão, reparando o sistema de afastamento e cumprindo seu papel como provedor interno.</p>
-        </section>
-
-        <section id="redacao4" class="secao">
-            <h2>As mudanças climáticas no Brasil e seus desafios
-            </h2>
-            <p>No filme “Rio”, são representados diversos problemas ambientais, tais como: desmatamento, caça não permitida, extinção de espécies e outros. Em consonância com a realidade, o mundo que hoje é habitado, sofre adversidades, já que é perceptível o agravamento de fenômenos naturais, como o efeito estufa, o que tem gerado consequências negativas para o planeta. Isso ocorre seja pelo desenvolvimento tecnológico avançado, seja pela capacidade de o homem de pensar apenas no que é momentâneo.
-
-Nessa perspectiva, trazendo à tona a história brasileira, apesar de o desenvolvimento tecnológico no Brasil ser tardio, foi a partir dele que os obstáculos ambientais iniciaram. Após o surgimento dos engenhos de açúcar, surgem as primeiras fábricas manufaturadas, o ciclo do café, até a chegada das multinacionais no governo Getúlio Vargas. Processos que exigiram uma demanda por matérias-primas, desequilibrando a natureza, infelicidade agravada nos tempos hodiernos.
-
-Em adição à realidade histórica, é notável que o ser humano nunca se importou com as consequências futuras de suas atitudes, pensando apenas no momento e nos lucros. Sendo assim, de acordo com Guy Debord, as pessoas são tão alienadas que só olham para aquilo que as deixam olhar. Ou seja, cresceram em uma sociedade que visava lucro e não valorizava o meio ambiente. Hoje, essas atitudes agravaram-se e impactaram elas mesmas.
-
-Portanto, urgem medidas para resolver as mudanças climáticas, que perpassam o contexto histórico e a autossuficiência humana. Para isso, deve o Ministério do Meio ambiente, que tem por função implementar políticas públicas para proteção e recuperação ambiental, em parceria com ONGs ambientais, desenvolverem projetos de conscientização, além da criação de infraestruturas que reduzam os poluentes. Através de ações práticas com os cidadãos brasileiros e parcerias com institutos de ciência especializados no meio ambiental. A partir disso, será possível sanar as dificuldades brasileiras.</p>
-        </section>
-
-        <section id="redacao5" class="secao">
-            <h2>As consequências do descarte do lixo eletrônico</h2>
-            <p>Os dispositivos eletrônicos fazem parte do nosso dia a dia, mas o descarte incorreto desses aparelhos gera um problema sério: o lixo eletrônico. Esse tipo de resíduos contém materiais tóxicos que, quando jogados no lugar errado, trazem consequências para o meio ambiente e para a saúde das pessoas, realidade retratada no filme Wall-E, em que a Terra foi abandona pelos humanos e coberta de lixo.
-
-Do ponto de vista ambiental, o filósofo Hans Jonas, ao propor o "Princípio da Responsabilidade" defende que a ética deve incluir a preocupação com as futuras gerações. Jogar eletrônicos no lixo comum contamina o solo e água com metais pesados, como chumbo e mercúrio, prejudicando o meio ambiente de forma duradoura. Assim, agir com responsabilidade ecológica é um dever ético da sociedade atual.
-
-No aspecto social, Karl Marx analisou como o sistema capitalista pode explorar o trabalho humano em condições precárias. Essa ideia se conecta com a realidade dos catadores informais, que muitas vezes lidam com lixo eletrônico sem proteção, sofrendo com doenças e exclusão social. Esse problema revela desigualdades que precisam ser enfrentadas com políticas públicas e inclusão social.
-
-Dessa forma, para mitigar os impactos do descarte de lixo eletrônico, o Ministério do Meio Ambiente, em parceria com o Ministério da Educação deve implementar, anualmente, campanhas educativas nas escolas e mídias sociais, explicando como e onde descartar eletrônicos. Além disso, é necessário instalar pontos de coleta em escolas, postos de saúde e centros comunitários. Essa medida visa conscientizar a população, reduzir a poluição e proteger os trabalhadores de reciclagem, promovendo sustentabilidade e justiça social.</p>
-        </section>
-
-        <section id="redacao6" class="secao">
-            <h2>O consumo de ultraprocessados e suas consequências à saúde</h2>
-            <p>O filme Detona Ralph retrata personagens viciados em ultraprocessados - doces. Fora do cinema, esta realidade aproxima-se da hodierna, tendo em vista que, a população desde criança ingere desses alimentos com alta quantidade de calorias e baixo valor nutricional. Eles, no entanto, geram grandes problemas à saúde. Consumidos devido a uma rotina agitada, como meio de praticidade, e como prazer momentâneo.
-
-Nesse viés, a realidade da maior parte dos brasileiros, busca melhorias de sua qualidade de vida financeira, para que sustentem suas casas. A partir disso, torna-se necessário uma alimentação rápida e prática que encaixe-se em suas rotinas corridas. Nesse sentido, Byung Chul-Han declara que a sociedade vive por desempenho, buscando sempre produzir. Contextualizando, em busca de melhores condições e ganância pelo dinheiro, a população é capaz de deixar uma boa alimentação, gerando consequências em todas as áreas da sua saúde e prejudicando sua cognição.
-
-Em adição a esse pensamento, Foucault reflete em sua obra vigiar e punir os quantos seres humanos são manipulados pelas suas estruturas sociais, ou seja, dependem tanto de um emprego para sobreviverem que a única maneira de se encontrarem felizes, seria descontando suas mágoas e dores no prazer momentâneo de uma comida gostosa, mas nem um pouco nutritiva.
-
-Assim, urgem medidas para sanar os problemas causados pela má alimentação que perpassa a rotina agitada e o prazer momentâneo. Para isso, é necessário que o Ministério da Saúde que tem por função proteger e recuperar a saúde da população, em parceria com o Ministério do Trabalho, desenvolver projetos que insiram a população em uma rotina mais saudável e menos exigente melhorando também as condições de trabalho, por meio de marmitas de alto valor nutricional e salários condizentes com cada realidade. Criando ambientes propícios a bons momentos.</p>
-        </section>
-
-        <section id="redacao7" class="secao">
-            <h2>Fatores e efeitos da dependência em jogos de aposta na web</h2>
-            <p>No filme “Jogo Perigoso 92017), é retratada a luta psicológica de uma personagem que, isolada e sem controle, precisa enfrentar seus próprios medos. Essa narrativa metaforicamente dialoga com a realidade dos jogos de apostas na Web que, embora pareçam inofensivos, têm levado muitas pessoas à dependência. Nesse contexto, percebe-se que a crescente adesão a essas plataformas digitais compromete tanto a saúde mental quanto a estabilidade financeira dos usuários. Assim, é possível defender que a vulnerabilidade emocional dos indivíduos e a ausência de políticas públicas eficazes são fatores centrais para o avanço desse problema.
-
-Em primeiro lugar, a vulnerabilidade emocional potencializa a dependência dos jogos de apostas online. As plataformas utilizam cores, bônus e estímulos psicológicos para manter o jogador ativo, o que fragiliza pessoas que buscam alívio para estresse ou ansiedade. De acordo com Aristóteles, o ser humano é um “animal político” e, portanto, sujeito às influências do meio. Logo, sem apoio social e psicológico, os indivíduos tendem a buscar refúgios que, muitas vezes, resultam em vícios.
-
-Além disso, a falta de políticas públicas específicas amplia os efeitos nocivos desses jogos. Embora haja legislação para jogos físicos, o ambiente digital ainda é pouco regulado no Brasil, permitindo que sites estrangeiros operem livremente. Para Kant, o Estado deve agir para proteger a dignidade humana. Nesse sentido, a omissão governamental compromete esse princípio, expondo cidadãos a riscos econômicos e psicológicos.
-
-Portanto, é necessário que o Ministério da Saúde em parceria com o Ministério da Justiça, implemente campanhas nacionais de conscientização sobre os riscos dos jogos de apostas online, aliadas a regulamentações rígidas sobre plataformas digitais. Essa ação deve ocorrer em redes sociais durante o ano letivo, garantindo que jovens e adultos tenham acesso a informações preventivas. Protegendo a mentalidade e os direitos dos cidadãos, fortalecendo o papel do Estado.</p>
-        </section>
-
-        <section id="redacao8" class="secao">
-            <h2>A importância do trabalho volutário no controle às desigualdades sociais</h2>
-            <p>No filme “DivertidaMente”, é possível observar como as emoções guiam as ações humanas e moldam a convivência entre as pessoas. De forma análoga, a empatia e a solidariedade são sentimentos essenciais para que o indivíduo reconheça a dor do outro e aja em prol do bem coletivo. Nesse contexto, o trabalho voluntário surge como instrumento fundamental no combate às desigualdades sociais, tanto pela necessidade de conscientizar a população sobre os problemas naturalizados quanto pela importância de reavivar laços comunitários em uma sociedade cada vez mais individualista.
-
-Em primeiro lugar, o trabalho voluntário é indispensável porque muitos problemas sociais, como a fome e a falta de moradia, tornaram-se banais aos olhos da sociedade. A filósofa Hannah Arendt, ao discutir a “banalização do mal”, explica que o mal se perpetua quando as pessoas se acostumam à injustiça e deixam de agir diante dela. Assim, a ausência de engajamento reforça as desigualdades, enquanto o voluntariado representa uma forma prática de romper com essa indiferença e recuperar o senso de responsabilidade coletiva.
-
-Além disso, o sociólogo Zygmunt Bauman, ao tratar da “Modernidade líquida”, aponta que as relações humanas tornaram-se frágeis e superficiais. Nesse cenário, o trabalho voluntário reacende o espírito comunitário, fortalecendo vínculos e resgatando valores como a empatia e a cooperação, fundamentais para o equilíbrio social.
-
-Portanto, é imprescindível que o Ministério do Desenvolvimento e Assistência Social, Família e Combate à Fome (MDS) promova campanhas nacionais de incentivo ao voluntariado em escolas e comunidades, por meio de parcerias com ONGs e programas educacionais, a fim de conscientizar sobre a importância da solidariedade e reduzir as desigualdades. Dessa forma, será possível construir uma sociedade mais justa, empática e comprometida com o bem comum.</p>
-        </section>
-
-        <section id="redacao9" class="secao">
-            <h2>Adultização infantil - conqueqências da perda irreparável da infância</h2>
-            <p>No filme “As Crônicas de Nárnia”, quatro irmãos são forçados a amadurecer rapidamente para enfrentar desafios e responsabilidades além da idade que possuem. Essa narrativa simbólica reflete a realidade de muitas crianças brasileiras, que, impulsionadas por pressões sociais e midiáticas, perdem precocemente a inocência característica da infância. Nesse sentido, a adultização infantil configura-se como um problema social que gera consequências psicológicas e emocionais graves, tanto pela perda da pureza e o lúdico, quanto pelo estresse excessivo imposto a indivíduos em desenvolvimento.
-
-A inocência infantil tem sido substituída por comportamento e padrões adultos impostos pelo meio social. O sociólogo Émile Durkheim defende que a sociedade exerce influência determinante sobre o indivíduo, moldando seus valores e condutas. Assim, em um contexto no qual a aparência, o consumo e o desempenho precoce são supervalorizados, as crianças acabam reproduzindo papéis adultos, deixando de vivenciar plenamente as experiências formadoras da infância.
-
-Além disso, a adultização infantil também provoca sofrimento emocional, conforme explica Pierre Bourdieu ao conceituar “violência simbólica” – forma sutil de opressão exercida por meio de normas e expectativas sociais. Ao exigir posturas e responsabilidades acima de sua maturidade, a sociedade impõe às crianças um fardo psicológico que pode desencadear ansiedade, baixa autoestima e perda de espontaneidade.
-
-Portanto, é fundamental que o Ministério dos Direitos Humanos e da Cidadania (MDHC) desenvolva campanhas nacionais de conscientização sobre os impactos da adultização infantil, em parceria com escolas e meios de comunicação, promovendo oficinas e formações voltadas à valorização da infância. Essa ação deve ser realizada por educadores e psicólogos, com o objetivo de preservar o desenvolvimento saudável das crianças e garantir-lhes o direito de viver plenamente essa etapa essencial da vida.p>
-        </section>
-
-        <section id="redacao10" class="secao">
-            <h2>Caminhos para combater o etarismo nas relações sociais </h2>
-            <p>No filme “As Crônicas de Nárnia”, as crianças protagonistas retornam ao mundo real após anos vividos como adultos em Nárnia, mas percebem que suas experiências e maturidade não são reconhecidas. De modo semelhante, na sociedade contemporânea, muitos indivíduos são subestimados em razão da idade, como se sua sabedoria acumulada perdesse valor com o tempo. Esse fenômeno evidencia o etarismo – discriminação baseada na idade – cuja superação é essencial, tanto por lembrar que todos envelhecerão quanto por reforçar a importância de incluir os idosos como parte ativa do convívio social.
-
-É fundamental, combater o etarismo, pois a sociedade, ao viver o presente de forma imediatista, ignora que todos estão sujeitos ao envelhecimento. O sociólogo Zygmunt Bauman, ao tratar da “modernidade líquida”, afirma que as relações tornaram-se frágeis e descartáveis, e isso se estende à forma em que se trata os mais velhos. Assim, o desinteresse coletivo pelo futuro e a busca constante por juventude acentuam o afastamento entre gerações, prejudicando a construção de uma comunidade solitária e duradoura.
-
-Além disso, Pierre Bourdieu explica que a “Violência Simbólica” ocorre quando grupos dominantes impõem valores e comportamentos que inferiorizam os outros. Nesse sentido, ao desconsiderar os idosos nas decisões sociais, políticas e profissionais, a sociedade pratica uma forma silenciosa de exclusão que reforça preconceitos e nega direitos, contribuindo para sua marginalização.
-
-Portanto, é imprescindível que o Ministério dos Direitos Humanos e da Cidadania promova campanhas nacionais de conscientização sobre o valor da pessoa idosa, em parceria com escolas e meios de comunicação. Por meio de ações educativas e de representação positiva na mídia, deve-se incentivar o respeito intergeracional, a fim de reduzir o preconceito e reconhecer o papel essencial dos idosos na construção de uma sociedade mais justa e empática.</p>
-        </section>
-
-        <section id="redacao11" class="secao">
-            <h2>A importância da educação financeira para os jovens</h2>
-            <p>Na série “Emily in Paris, a protagonista demonstra grande dificuldade em lidar com dinheiro, gastando mais do que ganha e enfrentando consequências financeiras por escolhas impensadas. Essa ficção reflete um problema real: a ausência de educação financeira entre jovens. Em uma sociedade marcada pelo consumo, pela busca incessante por desempenho e pela crença de que o “dinheiro não traz felicidade”, compreender e gerenciar recursos se torna um desafio. Nesse sentido, é essencial reconhecer que a educação financeira é importante porque vivemos em uma sociedade do desempenho e porque existem ideologias que desvalorizam o gerenciamento do dinheiro.
-
-Sob a perspectiva do filósofo Byung-Chul Han, vivemos na “sociedade do desempenho”, em que o indivíduo é pressionado a ser produtivo e bem-sucedido, mas sem limites claros entre trabalho e consumo. Essa lógica impulsiona jovens a gastar para afirmar valor e status, reforçando a ilusão de que o sucesso se mede pelo que se possui. A falta de educação financeira, portanto, perpetua um ciclo de endividamento e ansiedade, pois o sujeito tenta sustentar um padrão que não corresponde à sua realidade econômica.
-
-De acordo com Marilena Chauí, as ideologias funcionam como formas de dominação simbólica, naturalizando comportamentos e crenças. No contexto financeiro, isso se expressa em discursos que associam o dinheiro a algo negativo ou inalcançável, afastando o jovem da responsabilidade de administrar seus próprios recursos. Romper com essas ideologias exige educação crítica, que permita compreender o valor do planejamento e da autonomia financeira.
-
-Diante desse cenário, o Ministério da Educação (MEC) deve assumir protagonismo, inserindo a educação financeira de forma transversal no currículo escolar. Por meio de programas de formação docente e materiais didáticos contextualizados, o MEC poderá capacitar jovens a lidar com o dinheiro de maneira consciente, promovendo cidadania, responsabilidade e igualdade de oportunidades.</p>
-        </section>
-
-        <section id="redacao12" class="secao">
-            <h2>Desafios para a valorização da cultura popular brasileira</h2>
-            <p>Na série “Anne With an E”, a jovem Anne encontra em festas e celebrações comunitárias um espaço de acolhimento e pertencimento, mesmo em meio às diferenças. Essa representação revela como as manifestações culturais – como danças, músicas e festas – desempenham papel essencial na formação de vínculos sociais e no fortalecimento da identidade individual e coletiva. Nesse contexto, é possível afirmar que essas expressões são importantes porque criam agrupação de pessoas e porque moldam a personalidade de cada indivíduo, construindo sua identidade.
-
-Conforme Leandro Karnal, vive-se uma era de excesso de informação e escassez de sentido, em que as relações humanas se tornam cada vez mais superficiais. Nesse cenário, as manifestações culturais surgem como um antídoto à fragmentação social, pois proporcionam experiências compartilhadas que aproximam as pessoas e resgatam o sentimento de comunidade. As festas populares, por exemplo, unem diferentes gerações em torno de tradições, músicas e símbolos comuns, reforçando a coesão social e oferecendo significado em meio à rotina individualista contemporânea.
-
-Já sob a óptica de Émile Durkheim, a sociedade é responsável por moldar o indivíduo, determinando seus valores, comportamentos e crenças. As manifestações culturais, portanto, são instrumentos pelos quais a coletividade imprime em cada pessoa a marca de sua identidade. Através da música, da dança e das celebrações regionais, os sujeitos internalizam costumes, memórias e pertencimento que definem quem são e a qual grupo social pertencem.
-
-Diante disso, cabe ao Ministério da Cultura fortalecer políticas públicas que incentivam a valorização e a preservação das manifestações culturais brasileiras. Por meio de editais de fomento, programas de acesso e parcerias educacionais, o Ministério pode promover o envolvimento social e a formação cidadã, garantindo que as expressões culturais continuem unindo pessoas e construindo identidades.</p>
-        </section>
-
-        <section id="redacao13" class="secao">
-            <h2>Caminhos para a universalização do saneamento no Brasil</h2>
-            <p>No filme “Moana”, da Disney, a protagonista embarca em uma jornada para restaurar o equilíbrio da natureza e salvar sua ilha, que sofre com a escassez de recursos e a poluição. Embora seja uma animação, a obra reflete uma realidade semelhante à vivida no Brasil: a falta de cuidado com o meio ambiente e a ausência de condições adequadas de saneamento, que comprometem a saúde e a dignidade da população. Diante disso, torna-se essencial discutir caminhos para a universalização do saneamento básico no país, por meio da garantia de políticas públicas eficazes pelo Estado e da extinção da banalização da falta desse direito essencial.
-
-Segundo Aristóteles, em seu livro “Ética a Nicômaco”, o bem comum deve ser objetivo central da vida política, sendo dever do Estado promover condições que assegurem a virtude e a felicidade dos cidadãos. Sob essa perspectiva, o acesso ao saneamento básico é uma necessidade coletiva e moral, que garante saúde e qualidade de vida. Assim, políticas públicas que ampliem redes de abastecimento e esgotamento sanitário devem ser priorizadas, especialmente nas regiões mais vulneráveis, a fim de reduzir desigualdades e promover justiça social.
-
-Já para Hannah Arendt, o conceito de “banalização do mal” mostra como a repetição de injustiças e a indiferença diante do sofrimento tornam problemas graves socialmente aceitáveis. No Brasil, a naturalização da falta de saneamento básico representa essa indiferença: a sociedade se acostuma com a precariedade, ignorando os danos à saúde e à dignidade humana. Romper com essa banalização é, portanto, uma exigência ética.
-
-Dessa forma, o Ministério das Cidades, responsável por políticas de habitação e saneamento, deve intensificar programas de investimento em infraestrutura e educação ambiental. Ao garantir acesso universal à água tratada e ao esgoto, o Ministério promoverá saúde, cidadania e sustentabilidade para toda a população.</p>
-        </section>
-
-        <section id="redacao14" class="secao">
-            <h2>O Papel do esporte como ferramenta de transformação social</h2>
-            <p>No filme “Coach Carter: Treino para a Vida (2005)”, um técnico de basquete inspira jovens de uma escola periférica a enxergarem no esporte não apenas uma competição, mas um meio de mudança pessoal e social. A narrativa reflete uma realidade concreta: o esporte, quando valorizado, é capaz de promover inclusão, disciplina e superação de desigualdades. Assim, é necessário discutir o papel do esporte como ferramenta de transformação, analisando, primeiramente, sua influência na formação cidadã e, em seguida, seu impacto na redução de desigualdades sociais.
-
-Em primeiro lugar, o esporte desenvolve valores éticos e morais essenciais à convivência social. O filósofo Aristóteles defendia que a virtude é adquirida por meio do hábito – e nesse sentido, a prática esportiva ensina respeito, cooperação e resiliência. Ao inserir jovens em atividades coletivas, o esporte contribui para a formação de cidadãos conscientes e responsáveis, fortalecendo laços comunitários.
-
-Além disso, o esporte atua como instrumento de ascensão social. Pierre Bourdieu, sociólogo francês, afirmava que o capital cultural e simbólico pode transformar trajetórias. Assim, ao oferecer oportunidades por meio de programas esportivos, é possível romper ciclos de pobreza e exclusão, promovendo dignidade e perspectivas de futuro.
-
-Portanto, é imprescindível que o Ministério do Esporte amplie políticas públicas voltadas à democratização da prática esportiva. Sua função é formular e executar ações que garantam o acesso ao esporte em escolas e comunidades vulneráveis. Por isso, deve investir em infraestrutura, capacitação de profissionais e programas sociais integrados. Tal iniciativa é fundamental porque o esporte, além de promover saúde física e mental, é uma poderosa ferramenta de transformação individual e coletiva – capaz de construir uma sociedade mais justa e inclusiva.</p>
-        </section>
-
-        <section id="redacao15" class="secao">
-            <h2>A dificuldade dos expatriados para interação social</h2>
-            <p>Para o filósofo Zygmunt Bauman, o individualismo é um dos principais problemas da sociedade pós-modernidade, intensificando problemas de interação social e integração entre culturas e povos. Em vista que, cada sociedade estaria preocupada com seus próprios interesses. Partindo dessa concepção, surge um dilema referente à solidariedade internacional, a respeito dos refugiados. Devido à falta de leis que os amparam e ao egocentrismo dos países que os recebem. Urgem medidas para resolver tais problemáticas.
-
-Internacionalmente, os governos mundiais movimentam-se em prol de políticas que acolham os apátridas. Como o Pacto Global sobre Refugiados da ONU, de 2018. Que fornece um modelo de responsabilidades e cooperação internacional para cada caso. Na obra “Ética a Nicômaco” de Aristóteles, o pensador afirma que a política deve garantir direito a todos. No entanto, a prática não ocorre qualitativamente. É notável a falta de figuras da segurança pública que protejam os expatriados, o excesso de solicitações de refúgio, a falta de abrigos e empregos e, principalmente, a intolerância social. Mesmo com uma constituição que busca sua integração e participação.
-
-O “eu no centro” – egocentrismo tem sido uma das práticas mais comuns nos dias de hoje. Seguindo esse dilema referente à situação apresentada, é perceptível que ao chegarem em uma nova pátria, enfrentam discriminação, xenofobia e são vistos como uma ameaça. Byung-Chul-Han, filósofo hodierno, cita que os indivíduos buscam o próprio desempenho e não valorizam a vida como ela é realmente. Seguindo seu raciocínio e, trazendo para a realidade, os cidadãos dos países acolhedores, não estariam interessados no que não os convém, a cultura dos refugiados, nessa concepção, e sua história. Acarretando a falta de seus direitos.
-
-Cabe, portanto, ao governo, por meio do Ministério da Justiça e Segurança Pública, o qual mantém a ordem e defende garantias constitucionais, por meio do Comitê Nacional para os Refugiados (CONARE), criar programas sociais interativos que envolvam os apátridas com a população. Por meio da implantação de secretarias regionais que promoveriam atividade de interação social entre os grupos. Reparando o sistema de afastamento e isolamento e...</p>
-        </section>
+        <section class="secao" id="redacao1"><h2>Redação 1</h2><p>Desde os tempos antigos, há o anseio por adequação aos padrões estéticos, situação exemplificada na série “Bridgerton”, em que as mulheres utilizavam “corset” para definição de curvas corporais. Nesse viés, percebe-se o quanto estar dentro do que é considerado belo para a sociedade, é um fator perpassado aos tempos modernos. Sendo assim, a padronização de beleza, juntamente com o desejo pela perfeição culminaram na idealização de um arquétipo irreal de belo, alcançando procedimentos estéticos. Ultrapassando esse contexto e, chegando à realidade, constata-se que a padronização da beleza é uma característica social marcante. Nesse sentido, os indivíduos viveriam para ser o que os outros querem que sejam, ideia visível nos estudos estoicistas, em que, o ser observaria comportamentos para ver qual deveria seguir, e, alcançar a felicidade. Paradoxalmente, essa é a realidade: pessoas buscando padrões irreais para “pertencerem” a algo. Em adição a esse predisposto, outro fator que leva os jovens a cada vez mais realizarem procedimentos, é o desejo pela perfeição e a busca por aprovação, situação agravada pelas mídias. Soma-se a isso o tese do filósofo moderno Bournout, que destaca que os seres são repertórios de si, ou seja, “espetáculos” criados para performar e não cultivar uma identidade, tema também abordado por Guy Debord, escritor. Sendo assim, é necessária a adoção de medidas que preservem a identidade dos jovens, para não buscarem procedimentos estéticos em prol da perfeição pré-estabelecida. Cabe, portanto, ao Ministério de Desenvolvimento Social, que garante a qualidade de vida dos cidadãos, em parceria com complexos midiáticos, desenvolver projetos de auxílio psicológico por meio da criação de institutos que ofereçam esse suporte em sessões de terapia. Além da divulgação de “publis” midiáticas que se opõem ao padrão. Assim, será possível diminuir a quantidade de jovens que idealizam corpos irreais.</p></section>
+        <section class="secao" id="redacao2"><h2>Redação 2</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao3"><h2>Redação 3</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao4"><h2>Redação 4</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao5"><h2>Redação 5</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao6"><h2>Redação 6</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao7"><h2>Redação 7</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao8"><h2>Redação 8</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao9"><h2>Redação 9</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao10"><h2>Redação 10</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao11"><h2>Redação 11</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao12"><h2>Redação 12</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao13"><h2>Redação 13</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao14"><h2>Redação 14</h2><p>Escreva aqui sua redação…</p></section>
+        <section class="secao" id="redacao15"><h2>Redação 15</h2><p>Escreva aqui sua redação…</p></section>
 
     </main>
 
-    <!-- RODAPÉ -->
+    <!-- Rodapé -->
     <footer>
-        <p>Portfólio de Redações • 2025</p>
-        <p>Desenvolvido por Rafaela Karoline de Jesus Pinto</p>
+        <p>Site criado com 💗 por você — versão profissional</p>
     </footer>
 
+    <!-- JS -->
     <script src="script.js"></script>
-
-
 </body>
 </html>
-
-
-

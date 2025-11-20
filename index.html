@@ -29,25 +29,24 @@
 <section id="inicio" class="hero">
     <div class="hero-content">
         <h2>Encerramento do Ano Letivo</h2>
-        <p>Portfólio com as 15 produções realizadas na disciplina de Língua Portuguesa e Redação.</p>
+        <p>Portfólio com as produções realizadas na disciplina de Língua Portuguesa e Redação.</p>
         <a href="#portfolio" class="btn">Ver Trabalhos</a>
     </div>
 </section>
 
 <!-- PORTFÓLIO -->
 <main id="portfolio" class="portfolio-section">
-    <h2>Portfólio de Produções</h2>
+    <h2>Portfólio de Redações</h2>
 
     <div class="grid">
-        <!-- 15 Cards Automáticos -->
-        <!-- Basta trocar as imagens depois -->
         <script>
-            for(let i = 1; i <= 15; i++){
+            for (let i = 1; i <= 15; i++) {
                 document.write(`
                 <article class="card">
-                    <img src="img/trabalho${i}.jpg" alt="Produção ${i}">
-                    <h3>Produção ${i}</h3>
-                    <p>Descrição da produção ${i}. Você pode editar esse texto.</p>
+                    <img src="img/trabalho${i}.jpg" alt="Redação ${i}">
+                    <h3>Redação ${i}</h3>
+                    <p>Clique no botão abaixo para abrir esta redação.</p>
+                    <a href="redacoes/redacao${i}.html" class="btn">Abrir Redação</a>
                 </article>
                 `);
             }
@@ -59,8 +58,8 @@
 <section id="sobre" class="sobre-section">
     <h2>Sobre o Projeto</h2>
     <p>
-        Este site apresenta as produções desenvolvidas ao longo do ano na disciplina de Língua Portuguesa e Redação.
-        Ele reúne textos, análises, interpretações e atividades realizadas como parte do processo de aprendizagem.
+        Este site reúne as produções desenvolvidas ao longo do ano na disciplina de Língua Portuguesa e Redação.
+        Ele apresenta textos, atividades, análises e projetos que representam o aprendizado adquirido.
     </p>
 </section>
 
@@ -73,9 +72,10 @@
 
 <!-- FOOTER -->
 <footer>
-    <p>© 2024 Portfólio Escolar — Desenvolvido para avaliação.</p>
+    <p>© 2024 Portfólio Escolar — Desenvolvido como Projeto Educacional.</p>
 </footer>
 
 <script src="script.js"></script>
 </body>
 </html>
+

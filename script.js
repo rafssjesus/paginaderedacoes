@@ -1,47 +1,26 @@
-// ======== Rolagem suave ========
-document.querySelectorAll("nav a").forEach(link => {
-    link.addEventListener("click", function(e) {
-        e.preventDefault();
-        const alvo = document.querySelector(this.getAttribute("href"));
-        alvo.scrollIntoView({ behavior: "smooth" });
-    });
-});
+// --- MODO ESCURO ---
+const temaBtn = document.getElementById("tema-btn");
+temaBtn.onclick = () => {
+    document.body.classList.toggle("dark");
+    temaBtn.textContent = document.body.classList.contains("dark") ? "☀️" : "🌙";
+};
 
-// ======== Destacar link ativo conforme a seção ========
-const secoes = document.querySelectorAll("section");
-const links = document.querySelectorAll("nav a");
+// --- BOTÃO DE VOLTAR AO TOPO ---
+const topoBtn = document.getElementById("topo-btn");
 
 window.addEventListener("scroll", () => {
-    let atual = "";
-
-    secoes.forEach(secao => {
-        const topo = secao.offsetTop - 200;
-        if (scrollY >= topo) atual = secao.getAttribute("id");
-    });
-
-    links.forEach(link => {
-        link.classList.remove("ativo");
-        if (link.getAttribute("href").includes(atual)) {
-            link.classList.add("ativo");
-        }
-    });
+    if (window.scrollY > 400) {
+        topoBtn.style.display = "block";
+    } else {
+        topoBtn.style.display = "none";
+    }
 });
 
-// ======== Animação ao rolar ========
-const observer = new IntersectionObserver(entries => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
-            entry.target.style.opacity = 1;
-            entry.target.style.transform = "translateY(0)";
-        }
+topoBtn.onclick = () => {
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
     });
-});
-
-document.querySelectorAll(".secao").forEach(secao => {
-    secao.style.opacity = 0;
-    secao.style.transform = "translateY(50px)";
-    secao.style.transition = "0.8s ease";
-    observer.observe(secao);
-});
+};
 
 

@@ -1,105 +1,83 @@
-/* PALETA */
-:root {
-    --laranja-claro: #FEB47B;
-    --lilas: #C8A2C8;
-    --vermelho-pastel: #FF6961;
-    --laranja-pastel: #FFD6A5;
-    --magenta: #FF99CC;
-}
-
-/* RESET */
+/* ======== RESET ======== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Segoe UI", Arial, sans-serif;
 }
 
-html {
-    scroll-behavior: smooth;
+/* ======== CORES ======== */
+:root {
+    --laranja-claro: #FFCC99;
+    --lilas-apagado: #C7A9E6;
+    --vermelho-pastel: #F2A1A1;
+    --laranja-pastel: #FFD8A8;
+    --magenta-claro: #FFB3DA;
 }
 
-body {
-    background: var(--lilas);
-}
-
-/* MENU FIXO */
-.menu {
-    width: 100%;
-    background: var(--magenta);
-    padding: 15px;
+/* ======== CABEÇALHO FIXO ======== */
+header {
     position: fixed;
     top: 0;
-    left: 0;
-    z-index: 999;
-    box-shadow: 0 2px 8px #0003;
-}
-
-.menu ul {
+    width: 100%;
+    background: var(--lilas-apagado);
+    padding: 15px 20px;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 15px;
-    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+    z-index: 1000;
 }
 
-.menu a {
-    color: white;
+header h1 {
+    font-size: 22px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 15px;
+}
+
+nav a {
     text-decoration: none;
+    color: #333;
     font-weight: bold;
     transition: 0.3s;
 }
 
-.menu a:hover {
-    color: var(--vermelho-pastel);
+nav a:hover,
+nav a.ativo {
+    color: #fff;
 }
 
-/* CABEÇALHO */
-.header {
-    text-align: center;
-    padding-top: 120px;
-    padding-bottom: 40px;
-    background: var(--laranja-claro);
-    color: #4a004d;
-}
-
-.header h1 {
-    font-size: 2.5rem;
-}
-
-.header p {
-    margin-top: 10px;
+/* ======== SEÇÕES ======== */
+.secao {
+    padding: 120px 40px;
+    min-height: 100vh;
     font-size: 1.2rem;
 }
 
-/* CADA REDAÇÃO */
-.redacao {
-    max-width: 900px;
-    margin: 40px auto;
-    padding: 30px;
+.inicio {
+    background: var(--laranja-claro);
+}
+
+#redacao1 {
+    background: var(--vermelho-pastel);
+}
+
+#redacao2 {
     background: var(--laranja-pastel);
-    border-radius: 10px;
-    box-shadow: 0 0 10px #0003;
-    border-left: 12px solid var(--vermelho-pastel);
 }
 
-.redacao h2 {
-    margin-bottom: 15px;
-    color: #4a004d;
+#redacao3 {
+    background: var(--magenta-claro);
 }
 
-.redacao p {
-    line-height: 1.7;
-    font-size: 1.1rem;
+/* ======== RODAPÉ ======== */
+footer {
+    background: var(--lilas-apagado);
+    padding: 30px;
+    text-align: center;
+    font-weight: bold;
 }
 
-/* RESPONSIVO */
-@media (max-width: 600px) {
-    .menu ul {
-        gap: 10px;
-    }
-
-    .header h1 {
-        font-size: 1.8rem;
-    }
-}
